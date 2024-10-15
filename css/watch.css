@@ -1,0 +1,142 @@
+
+
+/* Form styles */
+.search-form {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.search-form select {
+    padding: 10px;
+    border: 1px solid #C58940;
+    border-radius: 5px;
+    background-color: #FFF;
+    color: #333;
+}
+form {
+    display: flex;
+    gap: 1rem;
+}
+.search-form input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #C58940;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.search-form input[type="submit"]:hover {
+    background-color: #A86B2E;
+}
+
+/* Review card styling */
+.reviews {
+   gap: 2rem;
+       display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 20px;
+    
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.item-box {
+    text-align: center;
+    writing-mode: vertical-lr;
+    /* text-orientation: mixed; */
+    padding: 20px;
+    /* text-combine-upright: revert; */
+    background-color: #faf8f1;
+    border-radius: 1rem;
+    color: black;
+}
+
+.review {
+    background-color: #FAF8F1;
+    border: 1px solid #E5BA73;
+    border-radius: 10px;
+    padding: 5px;
+    flex: 0 0 auto;
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* To ensure child elements don't overflow the card */
+}
+
+.review:hover {
+    transform: translateY(-5px);
+}
+
+.review-header,
+.review-footer {
+    background-color: beige;
+    padding: 20px 20px;
+    flex-shrink: 0;
+}
+
+.review-header {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.review-header h4 {
+    margin: 0;
+    color: #C58940;
+}
+
+.review-content {
+    flex-grow: 1;
+    padding: 10px 20px;
+    overflow-y: auto;
+}
+
+.review-content p {
+    margin: 0;
+    color: #333;
+}
+
+.review-footer {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.review-footer small {
+    display: block;
+    color: #777;
+}
+
+
+/* Button styles */
+.btn_box {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="submit"], input[type="reset"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #C58940;
+    color: #FFF;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #A86B2E;
+}
+
+input[type="reset"].btn1 {
+    background-color: #FAEAB1;
+    color: #333;
+}
+
+input[type="reset"].btn1:hover {
+    background-color: #C58940;
+    color: #FFF;
+}
